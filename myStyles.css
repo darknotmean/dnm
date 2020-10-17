@@ -1,0 +1,148 @@
+body{
+    background-color: #121212;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.3s ease-in;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    font-weight: 400;
+    /* color: #1c1c1c; */
+    color: #7e7e7e;
+    cursor: none;
+    /* display: inline; */
+    /* padding: 1em; */
+}
+
+#night-mode{
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    /* margin: 0 1em 0 0; */
+}
+
+#mainText{
+    margin:0;
+    padding:0;
+    font-weight: 500;
+    font-size: 14em;
+    color: #181818;
+    opacity: 0.6;
+    cursor: crosshair;
+    line-height: 100%;
+    position: relative;
+    left: -12px;
+    transition: opacity 0.3s;
+    transition: color 0.3s ease-in;
+}
+
+#mainText:hover{
+    opacity: 1;
+    /* color: #1f1f1f; */
+}
+
+#introText{
+    font-weight: 400;
+    color: #212121;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    cursor: default;
+    /* position: relative; */
+    /* bottom: 0em;
+    top: 2em;
+    left: 20px; */
+    transition: color 0.3s ease-in;
+}
+
+.myHeading{
+    font-weight: 500;
+    color: #1a1a1a;
+    cursor: default;
+    transition: color 0.3s ease-in;
+}
+
+.myProjTitle{
+    font-weight: 400;
+    color: #212121;
+}
+
+.prjLink{
+    color: #212121;
+    transition: color 0.3s ease-in;
+}
+
+.prjLink:hover{
+    color: #fb1048 !important;
+    transition: color 0.1s ease-out;
+}
+
+.extra-mg-btm{
+    margin-bottom: 10em;
+    border: none;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgb(199, 199, 199); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+@media only screen and (max-width: 480px) {
+    #mainText{
+        /* font-size: 8.5em; */
+        font-size: calc(6rem + 3vw);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    #mainText{
+        /* font-size: 8.5em; */
+        font-size: calc(8rem + 3vw);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    #mainText{
+        /* font-size: 8.5em; */
+        font-size: calc(9.5rem + 3vw);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #mainText{
+        /* font-size: 8.5em; */
+        font-size: calc(11rem + 3vw);
+        opacity: 0.6;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #mainText{
+        /* font-size: 8.5em; */
+        font-size: calc(12rem + 1.5vw);
+        opacity: 0.6;
+    }
+
+    /* #introText{
+        position: relative;
+        top: 4em;
+        left: 10px;
+    } */
+}
